@@ -34,6 +34,8 @@ h2 {
     margin-top: 20px;
     background: #ffdab9;
     text-align: justify;
+    display: grid;
+    justify-items: center;
 }
 
 #about h2 {
@@ -48,6 +50,7 @@ h2 {
 #about .bi {
     font-size: 30px;
     color: #86460e;
+    grid-column: 1 / 2;
 }
 
 #about img {
@@ -91,4 +94,20 @@ h2 {
     font-size: 26px;
     margin-top: 5px;
     margin-left: 20px;
+}
+
+.posts .card {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fae6e9;
+}
+
+.card .card-body h6 {
+    font-size: 14px;
+    color: #c0a288;
+}
+
+.card .col-md-8 .card-body a {
+    text-decoration: none;
+    color: #964061;
 }
