@@ -50,7 +50,6 @@ h2 {
 #about .bi {
     font-size: 30px;
     color: #86460e;
-    grid-column: 1 / 2;
 }
 
 #about img {
@@ -59,28 +58,22 @@ h2 {
 
 /* Grid Stuff */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 80px auto 80px;
-    height: 100vh;
-    width: 70%;
-    margin: 0 auto;
-}
-
 .navbar {
     grid-column-start: 1;
     grid-column-end: 4;
+    border-radius: 20px;
 }
 
 .grid-container #about {
     grid-column-start: 1;
     grid-column-end: 2;
+    border-radius: 20px;
 }
 
 .grid-container .posts {
     grid-column-start: 2;
     grid-column-end: 4;
+    border-radius: 20px;
 }
 
 /* Blog Posts */
@@ -110,4 +103,18 @@ h2 {
 .card .col-md-8 .card-body a {
     text-decoration: none;
     color: #964061;
+}
+
+/* MOBILE FRIENDLY */
+
+@media only screen and (min-width: 988px) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px auto 80px;
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    grid-gap: 0.5rem;
+    }
 }
