@@ -1,0 +1,94 @@
+* {
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+body {
+    background-color: #f0cfd4 !important;
+}
+
+.container .navbar-brand {
+    color: #c05c6e;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #9c989e;
+}
+
+.navbar {
+    background: #ffdab9;
+}
+
+.navbar-collapse ul li a {
+    color: #c05c6e;
+}
+
+h2 {
+    color: #964061 !important;
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px #5d4d64;
+} 
+
+/* About me section */
+
+#about {
+    margin-top: 20px;
+    background: #ffdab9;
+    text-align: justify;
+}
+
+#about h2 {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+#about p {
+    max-width: 400px;
+}
+
+#about .bi {
+    font-size: 30px;
+    color: #86460e;
+}
+
+#about img {
+    width: 150px;
+}
+
+/* Grid Stuff */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px auto 80px;
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-container #about {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-container .posts {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Blog Posts */
+
+.posts {
+    background: #fcdfc5;
+    margin-top: 20px;
+}
+
+#posts h2 {
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
